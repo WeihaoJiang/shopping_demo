@@ -1,0 +1,120 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<TableLayout
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:stretchColumns="1">
+
+    <TableRow android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etpoduct_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow android:padding="6dp">
+
+        <EditText
+            android:id="@+id/describe"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="描述你的商品"
+            android:lines="3"
+            android:textSize="15sp" />
+    </TableRow>
+
+
+
+    <TableRow android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="价格:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/turn_left" />
+    </RelativeLayout>
+    <TableRow android:padding="12dp">
+    <Button
+        android:id="@+id/button_select_publish"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:text="选择一张照片"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageview_select_publish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/screen_background_light_transparent"/>
+    </TableRow>
+    <TableRow android:padding="12dp">
+        <Button
+            android:id="@+id/button_submit_publish"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="提交"
+            android:textStyle="bold"/>
+    </TableRow>
+    <ProgressBar
+        android:id="@+id/mProgess"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/user_mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</TableLayout>
+
+
+    </ScrollView>
+</HorizontalScrollView>

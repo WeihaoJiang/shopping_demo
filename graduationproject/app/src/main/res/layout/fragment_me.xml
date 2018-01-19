@@ -1,0 +1,33 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.graduationproject.Fragment.MeFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text8"
+        android:textColor="@color/yellow_pressed"
+        android:textSize="20dp"
+        android:text="关于我的："/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_main2"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+</ScrollView>
+    </HorizontalScrollView>
